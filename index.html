@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+     <form class="m-5" action="enviar.php"  id="formulario" method="POST" onsubmit="return validar()">
+          
+          <div class="form-group col-md-6">
+            
+            <h2>Enviar mensaje</h2>
+
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="enter email">
+
+         <!--  <div class="" id="respuesta">
+            
+          </div> -->
+          
+          </div>
+
+          <div class="form-group col-md-6">
+            <input type="text" name="asunto" class="form-control" placeholder="asunto">
+            <textarea class="form-control mt-3" name="mensaje" id="mensaje" cols="59" rows="8" placeholder="mensaje"></textarea>
+            <button  type="submit" name="enviar" class="btn btn-info form-control mt-3">enviar</button>
+          </div>
+          
+
+        </form>
+
+<script>
+
+  function validar(){
+    var email = document.getElementById("email").value;
+    if (email === '') {
+      alert('add email');
+      return false;
+    }
+  }
+ 
+</script>
+     
+ </body>
+</html>
