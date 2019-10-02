@@ -9,7 +9,7 @@ $carta = "From: noreply@example.com" . " \r\n ";
 $carta.= "Reply-to: noreply@example.com"." \r\n";
 $carta.= "X-Mailer: PHP/". phpversion();
 $mail = @mail($email, $asunto, $mensaje, $carta);
- header('location:mensaje_nuevo.html');
+header('location:mensaje_nuevo.html');
 		
 
 
